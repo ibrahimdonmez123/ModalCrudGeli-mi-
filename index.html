@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Öğrenci CRUD</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Öğrenci CRUD Uygulaması</h1>
+
+  <button id="addStudentBtn">Öğrenci Ekle</button>
+
+  <div id="studentList"></div>
+
+  <!-- Öğrenci Ekle/Sil/Güncelle Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 id="modalTitle">Öğrenci Ekle</h2>
+      <form id="studentForm">
+        <label for="name">İsim:</label>
+        <input type="text" id="name" name="name">
+        <label for="school">Okul:</label>
+        <select id="school" name="school"></select>
+        <button id="saveBtn" type="submit">Kaydet</button>
+      </form>
+      <p id="confirmMsg"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
